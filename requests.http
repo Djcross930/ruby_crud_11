@@ -14,3 +14,11 @@ Content-Type: application/json
   "sets": 4,
   "reps": 12
 }
+
+###
+PATCH http://localhost:3000/workouts/4
+Content-Type: application/json
+
+{
+  "name": "The Leg Press"
+}

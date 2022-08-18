@@ -17,4 +17,13 @@ class WorkoutsController < ApplicationController
     workout.save
     render json: workout.as_json
   end
+
+  def update
+    workout = Workout.find_by(id: params[:id])
+    workout.name = params[:name] || workout.name
+    workout.sets = params[:sets] || workout.sets
+    workout.reps = params[:reps] || workout.reps
+    workout.save
+    render json: workout.as_json
+  end
 end
