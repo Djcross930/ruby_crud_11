@@ -4,3 +4,13 @@ GET http://localhost:3000/workouts
 ####
 
 GET http://localhost:3000/workouts/1
+
+###
+POST http://localhost:3000/workouts
+Content-Type: application/json
+
+{
+  "name": "leg press",
+  "sets": 4,
+  "reps": 12
+}
