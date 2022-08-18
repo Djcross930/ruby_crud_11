@@ -26,4 +26,11 @@ class WorkoutsController < ApplicationController
     workout.save
     render json: workout.as_json
   end
+  
+  def destroy
+    workout = Workout.find_by(id: params[:id])
+    workout.destroy
+    workouts = Workout.all
+    render json: workouts.as_json
+  end
 end

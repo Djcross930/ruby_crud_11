@@ -22,3 +22,5 @@ Content-Type: application/json
 {
   "name": "The Leg Press"
 }
+###
+DELETE http://localhost:3000/workouts/3
