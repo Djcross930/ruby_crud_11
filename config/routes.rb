@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post "/workouts" => "workouts#create"
   patch "/workouts/:id" => "workouts#update"
   delete "/workouts/:id" => "workouts#destroy"
-  
+
   get "/users" => "users#index"
+  get "/users/:id" => "users#show"
 end
