@@ -38,3 +38,11 @@ Content-Type: application/json
 {
   "name": "Dan"
 }
+###
+
+PATCH http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "name": "Danny"
+}
